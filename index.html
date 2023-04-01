@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="ukr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#reserve">Бронювання столика</a></li>
+          <li><a href="#order">Замовлення онлайн</a></li>
+          <li><a href="#news">Новини</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+      <div id="reserve" class="reservePart">
+        <h1 class="nameOfRestaurant">Restaurant name</h1>
+        <div class="containerReserveButton">
+          <button type="button" onclick="" class="reserveButton">
+            Забронювати столик
+          </button>
+        </div>
+      </div>
+
+      <div id="menu" class="menuPart container">
+        <div class="section-menu">
+          <h2 class="menu-title">Меню</h2>
+          <nav class="food-options">
+            <ul>
+              <li><a href="#breakfasts">Сніданки</a></li>
+              <li><a href="#appetizer">Закуски</a></li>
+              <li><a href="#soups">Супи</a></li>
+              <li><a href="#meat">М'ясо</a></li>
+              <li><a href="desert_page.html">Десерти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="block-image-menu">
+          <img src="./img/Intersect.jpg" alt="" class="image-menu" />
+        </div>
+      </div>
+
+      <div id="news" class="news-section container">
+        <h2 class="news__title_text">Новини</h2>
+        <div class="actual-news">
+          <div class="news-one">
+            <img src="./img/news-first-img.jpg" alt="" class="news-img-one" />
+            <p class="news-text">
+              Нове святкове меню до свята "Святого Валентина"
+            </p>
+          </div>
+          <div class="news-two">
+            <img src="./img/news-second-img.jpg" alt="" class="news-img-two" />
+            <p class="news-text">Майстер клас з приготування чізкейку</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="reviews" class="reviews-section container">
+        <h2 class="reviews__title_text">Відгуки</h2>
+        <form action="" class="review-form">
+          <label for="review" class="review-form-label">Залишити відгук</label>
+          <textarea name="review" id="review" cols="" rows="" class="textarea">
+          </textarea>
+        </form>
+        <button type="button" onclick="" class="review-send-button">
+          Відправити
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
