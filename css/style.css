@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.nav-menu {
+  background-color: black;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu li {
+  margin: 25px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nameOfRestaurant {
+  text-align: center;
+  font-family: Calypso;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 70px;
+  color: #ddbc8f;
+}
+
+.reserveButton {
+  display: inline-block;
+  background: #ddbc8f;
+  color: #50531a;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 45px;
+  line-height: 2.5;
+  font-weight: 0;
+  cursor: pointer;
+}
+.containerReserveButton {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.reservePart {
+  position: relative;
+  padding: 420px;
+}
+
+.reservePart::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/reserve_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+.menu-title {
+  margin-left: 10%;
+  margin-top: 10%;
+  font-family: Calypso;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 0;
+  color: #50531a;
+}
+
+.menuPart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddbc8f;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.food-options ul {
+  list-style: none;
+  margin-top: 20%;
+  margin-left: 10%;
+  padding: 0;
+}
+
+.food-options li {
+  margin: 30px 0;
+}
+
+.food-options a {
+  color: #50531a;
+  font-size: 80px;
+  text-decoration: none;
+}
+
+.section-menu {
+  background-color: #ddbc8f;
+  float: left;
+  width: 50%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin-top: 5%;
+}
+
+.block-image-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddbc8f;
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin-top: 15%;
+  margin-right: 10%;
+}
+
+.image-menu {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+
+.news-section {
+  background-color: #ddbc8f;
+  height: 100%;
+  width: 100%;
+}
+
+.news__title_text {
+  padding-top: 2%;
+  padding-left: 7%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  color: #50531a;
+}
+
+.actual-news {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.news-one {
+  margin-right: 5%;
+  height: auto;
+  max-width: 44%;
+}
+
+.news-two {
+  height: auto;
+  width: 32%;
+}
+
+.news-text {
+  margin-top: 5%;
+  font-size: 24px;
+  color: #50531a;
+  line-height: 28px;
+}
+
+.reviews-section {
+  background-color: #ddbc8f;
+  height: 100%;
+  width: 100%;
+}
+
+.reviews__title_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 10%;
+  font-size: 150px;
+  color: #50531a;
+}
+
+.review-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.review-form-label {
+  font-size: 30px;
+  color: #50531a;
+  margin-right: 2%;
+}
+
+.textarea {
+  background-color: rgba(255, 234, 205, 1);
+  color: rgba(166, 167, 133, 1);
+  width: 50%;
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  overflow: auto;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 50px;
+}
+
+.review-send-button {
+  display: flex;
+  text-align: center;
+  background: rgba(80, 83, 26, 1);
+  color: #ddbc8f;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 45px;
+  line-height: 2.5;
+  font-weight: 0;
+  cursor: pointer;
+}
+
+.carousel {
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.slide {
+  position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
